@@ -1,0 +1,180 @@
+.card{
+    position: relative;
+    margin-left: 80px;
+    margin-top: 120px;
+    margin-bottom: 50px;
+    width: 300px;
+    min-height: 220px;
+    background: rgb(157, 204, 235);
+    border-radius: 20px;
+    box-shadow: 0 35px 80px rgba(0,0,0,0.15);
+    transition: 0.5s;
+}
+
+
+.card:hover{
+    height: 220px;
+}
+
+.imgBx{
+    position: absolute;
+    left: 50%;
+    top: -40%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 120px;
+    background-color: #fdfafa;
+    box-shadow: 0 35px 80px rgba(0,0,0,0.35);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.card:hover .imgBx{
+    height: 165px;
+    width: 165px;
+}
+
+.imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.card .content .details{
+    padding: 30px;
+    text-align: center;
+    width: 100%;
+    transition: 0.5s;
+}
+
+.card .content .details h4{
+    font-size: 1.25em;
+    font-weight: 600;
+    color:#000000;
+    line-height: 1.2em;
+}
+.card .content .details h4:hover{
+    color: rgb(255, 64, 64);
+}
+
+.card .content .details h4 span{
+    font-size: 0.75em;
+    font-weight: 500;
+    opacity: 0.5;
+}
+
+.card .content .details .actionBtn{
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Facebook*/
+.card .content .details .actionBtn .fb{
+    min-width: 50px;
+    max-width: 40px;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    transition: 0.7s;
+}
+
+.card .content .details .actionBtn .fb svg{
+    fill:#228BE6;
+    transition: 0.7s;
+}
+
+.card .content .details .actionBtn .fb :hover{
+    background-color: #228BE6;
+    border-radius: 30px;
+}
+
+.card .content .details .actionBtn .fb svg:hover{
+    fill:#fdfafa;
+}
+
+
+/*Instagram*/
+.card .content .details .actionBtn .in{
+    min-width: 50px;
+    max-width: 40px;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    transition: 0.7s;
+}
+
+.card .content .details .actionBtn .in svg{
+    fill:#F25081;
+    transition: 0.7s;
+}
+
+.card .content .details .actionBtn .in :hover{
+    background-color: #F25081;
+    border-radius: 13px;
+}
+
+.card .content .details .actionBtn .in svg:hover{
+    fill:#fdfafa;
+}
+
+
+/*Linkedin*/
+.card .content .details .actionBtn .li{
+    min-width: 50px;
+    max-width: 40px;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    transition: 0.7s;
+}
+
+.card .content .details .actionBtn .li svg{
+    fill:#3700ff;
+    transition: 0.7s;
+}
+
+.card .content .details .actionBtn .li :hover{
+    background-color: #3700ff;
+    border-radius: 5px;
+}
+
+.card .content .details .actionBtn .li svg:hover{
+    fill:#fdfafa;
+}
+ 
+
+/* iphon video*/
+#videoList{
+    margin-left: 80px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: cursive;
+    text-align: center;
+}
+.video{
+    height: 360px;
+    width: 300px;
+    margin-bottom: 50px;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0px 20px 20px #0000003b;
+}
+.video .thevideo{
+    width: 100%;
+}
+
+video::-webkit-media-controls {
+    display: none !important;
+}
